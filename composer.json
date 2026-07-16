@@ -1,0 +1,50 @@
+{
+    "name": "phpcfdi/sat-49b-scraper",
+    "description": "Scraper para obtener el listado de empresas del articulo 49-B del CFF publicadas en el DOF",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cesar Aguilera",
+            "email": "cesargnu29@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/phpcfdi/sat-49b-scraper",
+    "support": {
+        "issues": "https://github.com/phpcfdi/sat-49b-scraper/issues",
+        "source": "https://github.com/phpcfdi/sat-49b-scraper"
+    },
+    "require": {
+        "php": ">=8.4",
+        "guzzlehttp/guzzle": "^7.10",
+        "symfony/css-selector": "^7.4 || ^8.0",
+        "symfony/dom-crawler": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpCfdi\\Sat49BScraper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpCfdi\\Sat49BScraper\\Tests\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/sat-49b-scraper"
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    },
+    "scripts": {
+        "dev:test": "phpunit"
+    },
+    "scripts-descriptions": {
+        "dev:test": "DEV: run phpunit"
+    }
+}
