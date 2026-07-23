@@ -1,0 +1,4 @@
+# DOF fixtures are raw captured evidence: never normalize their line endings
+# (mixed CRLF/LF as served by dof.gob.mx). Byte-for-byte parity with the copy
+# in listasnegraslw-/ln69-backend/src/test/resources/dof/ is load-bearing.
+tests/_files/** -text
